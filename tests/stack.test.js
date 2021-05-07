@@ -13,7 +13,7 @@ test('peek on stack with one element returns that element', () => {
 test('pop stack with one element returns that element', () => {
   stack.push(1);
   expect(stack.pop()).toBeDefined();
-  expect(stack.pop()).toBe(0);
+  expect(stack.pop()).toBe(1);
 });
 
 
