@@ -10,6 +10,13 @@ test('peek on stack with one element returns that element', () => {
     expect(stack.peek()).toBe(1);
 });
 
+test('pop stack with one element returns that element', () => {
+  stack.push(1);
+  expect(stack.pop()).toBeDefined();
+  expect(stack.pop()).toBe(0);
+});
+
+
 test('peek on stack with two or more elements returns the top element', () => {
     stack.push(1);
     stack.push("wow");
